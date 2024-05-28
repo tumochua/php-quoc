@@ -6,82 +6,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-    /* Style cho thanh header */
-    header {
-        background-color: #333;
-        color: white;
-        padding: 10px 20px;
-        display: flex;
-        justify-content: space-between;
-    }
+        /* Style cho thanh header */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+        }
 
-    /* Style cho các item trong header */
-    nav ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-    }
+        /* Style cho các item trong header */
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
 
-    nav ul li {
-        margin-right: 20px;
-    }
+        nav ul li {
+            margin-right: 20px;
+        }
 
-    nav ul li:last-child {
-        margin-right: 0;
-    }
+        nav ul li:last-child {
+            margin-right: 0;
+        }
 
-    nav ul li a {
-        color: white;
-        text-decoration: none;
-    }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
 
-    nav ul li a:hover {
-        text-decoration: underline;
-    }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
 
-    /* Style cho form */
-    form {
-        margin: 20px;
-        padding: 20px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        background-color: #f9f9f9;
-    }
+        /* Style cho form */
+        form {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
 
-    /* Style cho các nhãn */
-    form label {
-        display: block;
-        margin-bottom: 5px;
-    }
+        /* Style cho các nhãn */
+        form label {
+            display: block;
+            margin-bottom: 5px;
+        }
 
-    /* Style cho các input và textarea */
-    form input[type="text"],
-    form input[type="file"],
-    form select,
-    form textarea {
-        width: 100%;
-        padding: 8px;
-        margin-bottom: 10px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-    }
+        /* Style cho các input và textarea */
+        form input[type="text"],
+        form input[type="file"],
+        form select,
+        form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
 
-    /* Style cho nút gửi */
-    form button[type="submit"] {
-        background-color: #4CAF50;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-    }
+        /* Style cho nút gửi */
+        form button[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
 
-    /* Style cho nút gửi khi di chuột vào */
-    form button[type="submit"]:hover {
-        background-color: #45a049;
-    }
+        /* Style cho nút gửi khi di chuột vào */
+        form button[type="submit"]:hover {
+            background-color: #45a049;
+        }
     </style>
 </head>
 
@@ -136,7 +136,9 @@
             // Kết nối đến cơ sở dữ liệu
             $servername = "localhost";
             $username = "root";
-            $password = "123456";
+            // $password = "123456";
+            $password = "";
+
             $dbname = "nguyenvantu";
 
             $conn = new mysqli($servername, $username, $password, $dbname);

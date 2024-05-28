@@ -121,7 +121,9 @@ nav ul li a:hover {
     // Kết nối đến cơ sở dữ liệu
     $servername = "localhost";
     $username = "root";
-    $password = "123456";
+    // $password = "123456";
+    $password = "";
+
     $dbname = "nguyenvantu";
 
     $conn = new mysqli($servername, $username, $password, $dbname);

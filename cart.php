@@ -10,7 +10,8 @@ if (!isset($_COOKIE['user_id'])) {
 // Kết nối đến cơ sở dữ liệu
 $servername = "localhost";
 $username = "root";
-$password = "123456";
+//$password = "123456";
+$password = "";
 $dbname = "nguyenvantu";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -39,63 +40,63 @@ $result = $conn->query($sql);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giỏ hàng</title>
     <style>
-    /* Style cho thanh header */
-    header {
-        background-color: #333;
-        color: white;
-        padding: 10px 20px;
-        display: flex;
-        justify-content: space-between;
-    }
+        /* Style cho thanh header */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+        }
 
-    /* Style cho các item trong header */
-    nav ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-    }
+        /* Style cho các item trong header */
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
 
-    nav ul li {
-        margin-right: 20px;
-    }
+        nav ul li {
+            margin-right: 20px;
+        }
 
-    nav ul li:last-child {
-        margin-right: 0;
-    }
+        nav ul li:last-child {
+            margin-right: 0;
+        }
 
-    nav ul li a {
-        color: white;
-        text-decoration: none;
-    }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
 
-    nav ul li a:hover {
-        text-decoration: underline;
-    }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
 
-    /* Style cho container */
-    .container {
-        max-width: 1400px;
-        margin: 0 auto;
-        padding: 20px;
-    }
+        /* Style cho container */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
 
-    table {
-        width: 100%;
-        border-collapse: collapse;
-    }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
 
-    table,
-    th,
-    td {
-        border: 1px solid black;
-    }
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
 
-    th,
-    td {
-        padding: 10px;
-        text-align: left;
-    }
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+        }
     </style>
 </head>
 
