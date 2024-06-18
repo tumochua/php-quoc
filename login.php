@@ -82,9 +82,9 @@
         // Thông tin kết nối
         $servername = "localhost";
         $username = "root";
-        // $password = "123456";
-        $password = "";
-
+        $password = "123456";
+        //$password = "";
+        
         $database = "nguyenvantu";
 
         // Tạo kết nối

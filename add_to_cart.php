@@ -10,8 +10,8 @@ if (!isset($_COOKIE['user_id'])) {
 // Kết nối đến cơ sở dữ liệu
 $servername = "localhost";
 $username = "root";
-$password = "";
-//$password = "123456";
+//$password = "";
+$password = "123456";
 $dbname = "nguyenvantu";
 
 $conn = new mysqli($servername, $username, $password, $dbname);

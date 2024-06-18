@@ -4,8 +4,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Kết nối đến cơ sở dữ liệu
     $servername = "localhost";
     $username = "root";
-    // $password = "123456";
-    $password = "";
+    $password = "123456";
+    //$password = "";
 
     $database = "nguyenvantu";
 

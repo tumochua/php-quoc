@@ -2,8 +2,8 @@
 // Kết nối đến cơ sở dữ liệu
 $servername = "localhost";
 $username = "root";
-//$password = "123456";
-$password = "";
+$password = "123456";
+//$password = "";
 $dbname = "nguyenvantu";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -71,90 +71,90 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chỉnh sửa sản phẩm</title>
     <style>
-        /* Style cho thanh header */
-        header {
-            background-color: #333;
-            color: white;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-        }
+    /* Style cho thanh header */
+    header {
+        background-color: #333;
+        color: white;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+    }
 
-        /* Style cho các item trong header */
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
+    /* Style cho các item trong header */
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
 
-        nav ul li {
-            margin-right: 20px;
-        }
+    nav ul li {
+        margin-right: 20px;
+    }
 
-        nav ul li:last-child {
-            margin-right: 0;
-        }
+    nav ul li:last-child {
+        margin-right: 0;
+    }
 
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-        }
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
 
-        nav ul li a:hover {
-            text-decoration: underline;
-        }
+    nav ul li a:hover {
+        text-decoration: underline;
+    }
 
-        h1 {
-            margin-left: 20px;
-            color: #333;
-        }
+    h1 {
+        margin-left: 20px;
+        color: #333;
+    }
 
-        form {
-            margin: 20px;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            background-color: #fff;
-        }
+    form {
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #fff;
+    }
 
-        form label {
-            display: block;
-            margin-bottom: 5px;
-            color: #333;
-        }
+    form label {
+        display: block;
+        margin-bottom: 5px;
+        color: #333;
+    }
 
-        form input[type="text"],
-        form select {
-            width: calc(100% - 22px);
-            padding: 8px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
+    form input[type="text"],
+    form select {
+        width: calc(100% - 22px);
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
 
-        form textarea {
-            width: calc(100% - 22px);
-            padding: 8px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
+    form textarea {
+        width: calc(100% - 22px);
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
 
-        form button[type="submit"] {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
+    form button[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
 
-        form button[type="submit"]:hover {
-            background-color: #45a049;
-        }
+    form button[type="submit"]:hover {
+        background-color: #45a049;
+    }
     </style>
 </head>
 

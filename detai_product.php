@@ -5,122 +5,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        /* Style cho thanh header */
-        header {
-            background-color: #333;
-            color: white;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-        }
+    /* Style cho thanh header */
+    header {
+        background-color: #333;
+        color: white;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+    }
 
-        /* Style cho các item trong header */
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
+    /* Style cho các item trong header */
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
 
-        nav ul li {
-            margin-right: 20px;
-        }
+    nav ul li {
+        margin-right: 20px;
+    }
 
-        nav ul li:last-child {
-            margin-right: 0;
-        }
+    nav ul li:last-child {
+        margin-right: 0;
+    }
 
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-        }
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
 
-        nav ul li a:hover {
-            text-decoration: underline;
-        }
+    nav ul li a:hover {
+        text-decoration: underline;
+    }
 
-        /* Style cho container */
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 20px;
-        }
+    /* Style cho container */
+    .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 20px;
+    }
 
-        /* Style cho hình ảnh */
-        .product-image {
-            width: 100%;
-            max-width: 400px;
-            margin-bottom: 20px;
-        }
+    /* Style cho hình ảnh */
+    .product-image {
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 20px;
+    }
 
-        /* Style cho tiêu đề */
-        h1 {
-            margin-top: 0;
-        }
+    /* Style cho tiêu đề */
+    h1 {
+        margin-top: 0;
+    }
 
-        /* Style cho giá */
-        .price {
-            font-weight: bold;
-            color: #ff5733;
-        }
+    /* Style cho giá */
+    .price {
+        font-weight: bold;
+        color: #ff5733;
+    }
 
-        /* Style cho mô tả */
-        .description {
-            margin-bottom: 20px;
-            line-height: 1.5;
-        }
+    /* Style cho mô tả */
+    .description {
+        margin-bottom: 20px;
+        line-height: 1.5;
+    }
 
-        /* Style cho nút */
-        .btn {
-            display: inline-block;
-            background-color: #333;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-        }
+    /* Style cho nút */
+    .btn {
+        display: inline-block;
+        background-color: #333;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+    }
 
-        .btn:hover {
-            background-color: #555;
-        }
+    .btn:hover {
+        background-color: #555;
+    }
 
-        /* Style cho modal */
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgb(0, 0, 0);
-            background-color: rgba(0, 0, 0, 0.4);
-            padding-top: 60px;
-        }
+    /* Style cho modal */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+        padding-top: 60px;
+    }
 
-        .modal-content {
-            background-color: #fefefe;
-            margin: 5% auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 80%;
-            max-width: 500px;
-        }
+    .modal-content {
+        background-color: #fefefe;
+        margin: 5% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        max-width: 500px;
+    }
 
-        .close {
-            color: #aaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
 
-        .close:hover,
-        .close:focus {
-            color: black;
-            text-decoration: none;
-            cursor: pointer;
-        }
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
     </style>
 </head>
 
@@ -158,9 +158,9 @@
         // Kết nối đến cơ sở dữ liệu
         $servername = "localhost";
         $username = "root";
-        // $password = "123456";
-        $password = "";
-
+        $password = "123456";
+        //$password = "";
+        
         $dbname = "nguyenvantu";
 
         $conn = new mysqli($servername, $username, $password, $dbname);
@@ -214,23 +214,23 @@
     </div>
 
     <script>
-        // Mở modal
-        function openModal(productId) {
-            document.getElementById('product_id').value = productId;
-            document.getElementById('cartModal').style.display = "block";
-        }
+    // Mở modal
+    function openModal(productId) {
+        document.getElementById('product_id').value = productId;
+        document.getElementById('cartModal').style.display = "block";
+    }
 
-        // Đóng modal
-        function closeModal() {
+    // Đóng modal
+    function closeModal() {
+        document.getElementById('cartModal').style.display = "none";
+    }
+
+    // Đóng modal khi click ngoài modal
+    window.onclick = function(event) {
+        if (event.target == document.getElementById('cartModal')) {
             document.getElementById('cartModal').style.display = "none";
         }
-
-        // Đóng modal khi click ngoài modal
-        window.onclick = function (event) {
-            if (event.target == document.getElementById('cartModal')) {
-                document.getElementById('cartModal').style.display = "none";
-            }
-        }
+    }
     </script>
 </body>
 

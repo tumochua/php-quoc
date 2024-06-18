@@ -6,83 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quản lý sản phẩm</title>
     <style>
-        /* Style cho thanh header */
-        header {
-            background-color: #333;
-            color: white;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-        }
+    /* Style cho thanh header */
+    header {
+        background-color: #333;
+        color: white;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+    }
 
-        /* Style cho các item trong header */
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
+    /* Style cho các item trong header */
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
 
-        nav ul li {
-            margin-right: 20px;
-        }
+    nav ul li {
+        margin-right: 20px;
+    }
 
-        nav ul li:last-child {
-            margin-right: 0;
-        }
+    nav ul li:last-child {
+        margin-right: 0;
+    }
 
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-        }
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
 
-        nav ul li a:hover {
-            text-decoration: underline;
-        }
+    nav ul li a:hover {
+        text-decoration: underline;
+    }
 
-        /* Style cho bảng */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
+    /* Style cho bảng */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
 
-        /* Style cho tiêu đề cột */
-        th {
-            background-color: #333;
-            color: white;
-            font-weight: bold;
-        }
+    /* Style cho tiêu đề cột */
+    th {
+        background-color: #333;
+        color: white;
+        font-weight: bold;
+    }
 
-        /* Style cho dòng chẵn */
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
+    /* Style cho dòng chẵn */
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
 
-        /* Style cho ô dữ liệu */
-        td {
-            padding: 8px;
-            border: 1px solid #ddd;
-        }
+    /* Style cho ô dữ liệu */
+    td {
+        padding: 8px;
+        border: 1px solid #ddd;
+    }
 
-        /* Style cho ô dữ liệu ở cột hình ảnh */
-        td.image {
-            max-width: 100px;
-        }
+    /* Style cho ô dữ liệu ở cột hình ảnh */
+    td.image {
+        max-width: 100px;
+    }
 
-        /* Style cho hình ảnh */
-        img {
-            max-width: 100%;
-            height: auto;
-        }
+    /* Style cho hình ảnh */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 
-        /* Style cho hình ảnh trong bảng */
-        td.image img {
-            width: 50%;
-            margin: 0 auto;
-            display: block;
-            /* Để căn giữa hình ảnh */
-        }
+    /* Style cho hình ảnh trong bảng */
+    td.image img {
+        width: 50%;
+        margin: 0 auto;
+        display: block;
+        /* Để căn giữa hình ảnh */
+    }
     </style>
 </head>
 
@@ -123,9 +123,9 @@
         // Kết nối đến cơ sở dữ liệu
         $servername = "localhost";
         $username = "root";
-        // $password = "123456";
-        $password = "";
-
+        $password = "123456";
+        //$password = "";
+        
         $dbname = "nguyenvantu";
 
         $conn = new mysqli($servername, $username, $password, $dbname);
